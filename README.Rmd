@@ -1,0 +1,20 @@
+---
+title: "README.md"
+author: "Francesca Iannuzzi"
+date: "20 Feb 2015"
+output: html_document
+---
+
+The run_analysis.R script does the following operations in order:
+
+- Reads in the Training and Test datasets;
+- Stacks the two datasets;
+- Extract the columns containing either "mean()" or "std()" in their name;
+- Adds a column to the dataset describing the activity each row corresponds to;
+- Changes the column names;
+- Adds a column with the identifier of the subject that produced each measurement;
+- Groups the resulting dataset by "Activity" and "Subject" number;
+- Computes the mean for each group;
+- Writes the resulting dataset in a .txt. file;
+
+The script itself contains comments line-by-line.
